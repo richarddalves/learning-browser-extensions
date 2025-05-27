@@ -22,3 +22,7 @@ if (minutesRounded < 1) {
 } else {
   console.log(`Long reading: ${minutesRounded} minutes.`);
 }
+
+const newDiv = document.createElement("div");
+newDiv.innerHTML = `<p>Reading time: ${minutesRounded} min.</p>`;
+document.body.appendChild(newDiv);
