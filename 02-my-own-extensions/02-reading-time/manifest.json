@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Tempo de leitura",
+    "description": "Minha primeira descrição solo",
+    "version": "1.0.0",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["content.js"]
+        }
+    ]
+}

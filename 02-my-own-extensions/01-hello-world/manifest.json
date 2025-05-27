@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Hello, World!",
+  "version": "1.0",
+  "description": "My first extensions. Just prints \"Hello, world!\"",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"] }]
+}
