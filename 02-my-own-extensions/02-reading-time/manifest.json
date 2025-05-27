@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Tempo de leitura",
-    "description": "Minha primeira descrição solo",
+    "name": "Reading Time",
+    "description": "This is my first time creating manifest by myself",
     "version": "1.0.0",
     "permissions": ["scripting", "activeTab"],
     "content_scripts": [
