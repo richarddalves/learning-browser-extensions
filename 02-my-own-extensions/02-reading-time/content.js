@@ -24,5 +24,6 @@ if (minutesRounded < 1) {
 }
 
 const newDiv = document.createElement("div");
+newDiv.id = "rtime";
 newDiv.innerHTML = `<p>Reading time: ${minutesRounded} min.</p>`;
 document.body.appendChild(newDiv);
