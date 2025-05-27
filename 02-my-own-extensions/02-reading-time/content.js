@@ -1,5 +1,5 @@
 // Searchs for the first title on the page
-const title = document.querySelector("h1");
+let title = document.querySelector("h1");
 if (!title) title = document.querySelector("h2");
 
 const text = document.body.innerText;
