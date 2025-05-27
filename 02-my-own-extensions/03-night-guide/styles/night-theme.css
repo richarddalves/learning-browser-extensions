@@ -1,0 +1,18 @@
+/* --- Night-Guide base reset --- */
+html, body {
+  background: #0f1117 !important;
+  color: #e6d5b5 !important;
+}
+
+img, video, picture, iframe {
+  filter: brightness(0.8) contrast(0.9) !important;
+}
+
+a { color: #8ab4ff !important; }
+
+::selection {
+  background: #465b7c !important;
+  color: #fff !important;
+}
+
+/* Feel free to refine further later */

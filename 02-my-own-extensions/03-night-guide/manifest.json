@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Night-Guide",
+  "description": "Toggle a comfortable night theme on any page.",
+  "version": "0.1",
+  "action": {},
+  "background": { "service_worker": "background.js" },
+  "permissions": ["activeTab", "scripting", "storage", "unlimitedStorage"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q"
+      }
+    }
+  }
+}
