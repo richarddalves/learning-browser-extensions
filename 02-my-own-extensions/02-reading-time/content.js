@@ -1,14 +1,24 @@
-// Searchs for the first h1 on the page
-const h1 = document.querySelector("h1");
+// Searchs for the first title on the page
+const title = document.querySelector("h1");
+if (!title) title = document.querySelector("h2");
 
-const h1Text = h1.innerText;
-const h1Words = h1Text.trim().split(/\s+/);
-const h1CountWord = h1Words.length;
+const text = document.body.innerText;
+const words = text.trim().split(/\s+/).length;
 
 let wordsPerMinut = 200;
 
-const minutes = h1CountWord / wordsPerMinut;
+const minutes = words / wordsPerMinut;
 const minutesRounded = Math.ceil(minutes * 100) / 100;
 
-if (h1) console.log(`Estimated reading time for the title: ${minutesRounded} minutes!`);
-else console.warn("No <h1> was found in this page!");
+if (title) console.log(`Title found: ${title.innerText}!`);
+else console.warn("No title was found in this page!");
+
+console.log(`Words found: ${words}`);
+
+if (minutesRounded < 1) {
+  console.log(`Fast reading: ${minutesRounded} minutes.`);
+} else if (minutesRounded < 5) {
+  console.log(`Medium reading: ${minutesRounded} minutes.`);
+} else {
+  console.log(`Long reading: ${minutesRounded} minutes.`);
+}
